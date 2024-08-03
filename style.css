@@ -20,7 +20,7 @@
 
 /*----------------------------------------Navbar Section----------------------------------------*/
 .container{
-    width: 1200px;
+    width: 1080px;
     margin: 0 auto;
 }
 
@@ -304,7 +304,7 @@ a{
 }
 
 .project-container{
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 3rem 0;
 
@@ -464,73 +464,6 @@ a{
     transform: scale(1.1);
 }
 
-@media (max-width:1300px){
-    .page-header {
-        padding-top: 30px;
-        color: var(--bgOrange);
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .project-container {
-        padding: 5px;
-        margin: 10px;
-        gap: 60px;
-    }
-
-    .project-card {
-        width: 100%;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .project-content {
-        scale: 0.5;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-    }
-
-    .project-content-left {
-        left: 0;
-    }
-
-    .project-heading {
-        font-size: 40px;
-        width: 100%;
-    }
-
-    .project-sub-heading {
-        width: 100%;
-    }
-
-    #project2 {
-        margin-left: 0;
-    }
-
-    #project4 {
-        margin-left: 0;
-    }
-
-    .project-skill-container {
-        width: 100%;
-    }
-
-    .project-skill {
-        width: 35px;
-    }
-
-    .project-card:hover .project-number {
-        display: none;
-    }
-
-    .project-card:hover .project-content {
-        scale: 0.55;
-    }
-}
-
 /* ----------------------------------------Skills Section---------------------------------------- */
 .skills-container{
     position: relative;
@@ -540,16 +473,16 @@ a{
     gap: 30px;
 }
 
-.skills-container-left{
-    width: 50%;
+.skill-container-left{
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
 
-.skills-container-right{
+.skill-container-right{
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
     position: relative;
     gap: 2rem;
     justify-content: center;
@@ -557,10 +490,10 @@ a{
 
 .skill-faded-text{
     position: absolute;
-    font-size: 13em;
+    font-size: 10em;
     font-style: bold;
     color: rgb(231, 231, 231);
-    bottom: -33%;
+    bottom: -31%;
     right: -1%;
     user-select: none;
     overflow-y: hidden;
@@ -724,4 +657,108 @@ footer{
 .icon-wrapper{
     display: flex;
     gap: 1rem;
+}
+
+/* Responsiveness for max-width : 1280px */
+@media (max-width:1280px){
+    .container{
+        width: 880px;
+    }
+
+    .faded-text{
+        font-size: 4em;
+        bottom: -12%;
+    }
+
+    .page-header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: var(--bgOrange);
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .project-container {
+        padding: 5px;
+        margin: 0 auto;
+        gap: 60px;
+        width: 880px;
+    }
+
+    .project-card {
+        width: 90%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #project2{
+        right: 25px;
+    }
+
+    .project-content {
+        scale: 0.5;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .project-content-left {
+        left: 0px;
+    }
+
+    .project-content-right{
+        right: 0;
+    }
+
+    .project-heading {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .project-sub-heading {
+        width: 100%;
+    }
+
+    .project-skill-container {
+        width: 100%;
+    }
+
+    .project-skill {
+        width: 35px;
+    }
+
+    .project-card:hover .project-number {
+        display: none;
+    }
+
+    .project-card:hover .project-content {
+        scale: 0.55;
+    }
+
+    .skill-container-left{
+        width: 40%;
+    }
+
+    .skill-container-right{
+        width: 60%;
+        gap: 2rem;
+    }
+
+    .skill-faded-text{
+        font-size: 7em;
+        bottom: -21.3%;
+        right: 5%;
+    }
+
+    .contactus-heading{
+        font-size: 3.5em;
+        padding-top: 2rem;
+    }
+
+    .contactus-sub-heading{
+        font-size: 2.2rem;
+    }
+
 }
